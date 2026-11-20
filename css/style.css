@@ -1,0 +1,261 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+    color: #263247;
+    margin: 0;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #6dcff6;
+    padding: 22px 40px;
+    border-bottom: 3px solid #f58220;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #f58220;
+    transform: translateY(-2px);
+}
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(24, 49, 83, 0.06);
+    border: 1px solid #e9edf2;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(24, 49, 83, 0.12);
+}
+
+section h2 {
+    color: #183153;
+    font-size: 25px;
+    border-bottom: 2px solid #f58220;
+    padding-bottom: 14px;
+    margin-top: 0;
+}
+
+section p {
+    color: #52647c;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* PÁGINA INICIAL */
+
+#inicio {
+    text-align: center;
+    padding: 100px 35px;
+    background: linear-gradient(135deg, #ffffff, #eaf1fa);
+    border-top: 5px solid #f58220;
+}
+
+#inicio h1 {
+    color: #183153;
+    font-size: 38px;
+    max-width: 800px;
+    margin: 0 auto 22px;
+}
+
+#inicio p {
+    color: #52647c;
+    font-size: 18px;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    #inicio {
+        padding: 65px 20px;
+    }
+
+    #inicio h1 {
+        font-size: 29px;
+    }
+}
+.botao {
+    display: inline-block;
+    background-color: #f58220;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #e06d0b;
+    transform: translateY(-3px);
+}
+.etapas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.etapa {
+    flex: 1;
+    min-width: 150px;
+    background-color: #eaf4fa;
+    border-left: 4px solid #f58220;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #183153;
+}
+.seta {
+    color: #f58220;
+    font-size: 22px;
+    font-weight: bold;
+    align-self: center;
+}
+.exemplos-estruturas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.exemplo {
+    background-color: #eaf4fa;
+    border-left: 4px solid #f58220;
+    padding: 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.exemplo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(24, 49, 83, 0.10);
+}
+
+.exemplo h3 {
+    color: #183153;
+    margin-top: 0;
+}
+
+.exemplo p {
+    margin-bottom: 0;
+}
+.comparacao-busca {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.busca {
+    background-color: #eaf4fa;
+    border-left: 4px solid #f58220;
+    padding: 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.busca:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(24, 49, 83, 0.10);
+}
+
+.busca h3 {
+    color: #183153;
+    margin-top: 0;
+}
+
+.complexidade {
+    display: inline-block;
+    background-color: #f58220;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.busca p {
+    margin-bottom: 0;
+}
