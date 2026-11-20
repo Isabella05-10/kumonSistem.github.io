@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto Acadêmico - Kumon</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img
+    src="https://sitecontent.kumon.com.br/sitestg/kumon-website-pt/img/sobre/4%20-%20060-logo_azul.jpg"
+    alt="Logotipo do Kumon"
+    class="logo"
+>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#projeto">Projeto</a>
+                <a href="#estado">Estado Atual</a>
+                <a href="#fluxo">Fluxo do Sistema</a>
+                <a href="#teoria">Teoria</a>
+                <a href="#estruturas">Estruturas</a>
+                <a href="#complexidade">Complexidade</a>
+                <a href="#busca">Ordenação e Busca</a>
+                <a href="#memoria">Memória e Alocação</a>
+                <a href="#decisoes">Decisões de Engenharia</a>
+                <a href="#conclusao">Conclusão</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+    <h1>Teoria da Computação e Estrutura de Dados</h1>
+
+    <p>Conheça a aplicação dos conceitos de Engenharia da Computação no Projeto Integrador da Unidade Kumon.</p>
+
+    <a href="#projeto" class="botao">Conheça o Projeto</a>
+</section>
+
+        <section id="projeto">
+            <h2>Visão Geral do Projeto</h2>
+            <p>
+                O projeto propõe o desenvolvimento de um sistema web para
+centralizar e facilitar a gestão de uma unidade Kumon. A
+proposta busca melhorar a organização dos dados de alunos
+e responsáveis, o cadastro de matrículas, o controle de
+documentos e o acompanhamento das solicitações. Dessa
+forma, o sistema pretende reduzir a dificuldade de gerenciar
+informações e tornar os processos administrativos mais
+organizados. O projeto utiliza conceitos de Estrutura de
+Dados e Teoria da Computação para fundamentar suas decisões
+técnicas.
+            </p>
+        </section>
+        <section id="estado">
+    <h2>Estado Atual de Desenvolvimento</h2>
+    <p>
+        Até o momento, foi desenvolvido o planejamento do
+        sistema e um protótipo visual para representar sua
+        estrutura e funcionamento. O protótipo apresenta
+        a página inicial, o formulário de matrícula, a tela
+        de login, o painel do responsável, o painel
+        administrativo e o fluxo de matrículas.
+
+        Como próximos passos, estão previstos o desenvolvimento
+        das funcionalidades, a integração com o banco de dados
+        e a realização de testes.
+    </p>
+</section>
+
+<section id="fluxo">
+    <h2>Fluxo Previsto de Funcionamento</h2>
+
+    <p>
+        O processo de matrícula foi planejado para organizar
+        as solicitações e facilitar o acompanhamento pelo
+        responsável e pela equipe administrativa.
+    </p>
+
+    <div class="etapas">
+    <div class="etapa">1. Preenchimento do formulário</div>
+    <span class="seta">➜</span>
+    <div class="etapa">2. Validação dos dados</div>
+    <span class="seta">➜</span>
+    <div class="etapa">3. Registro da solicitação</div>
+    <span class="seta">➜</span>
+    <div class="etapa">4. Análise do administrador</div>
+    <span class="seta">➜</span>
+    <div class="etapa">5. Atualização do status</div>
+</div>
+</section>
+
+        <section id="teoria">
+            <h2>Teoria da Computação</h2>
+            <p>
+                A Teoria da Computação pode ser aplicada na validação dos
+dados inseridos no sistema. Expressões regulares ajudam
+a verificar se informações seguem um formato esperado,
+como um endereço de e-mail. Já os Autômatos Finitos
+Determinísticos (AFD) reconhecem linguagens regulares,
+aceitando ou rejeitando sequências de caracteres conforme
+as regras definidas.
+            </p>
+        </section>
+
+        <section id="estruturas">
+            <h2>Estruturas de Dados</h2>
+            <p>
+                As listas permitem armazenar e organizar os dados dos alunos,
+facilitando a inclusão e a consulta dos registros. As filas
+podem controlar as solicitações de matrícula por ordem de
+chegada, seguindo o princípio FIFO (primeiro a entrar, primeiro
+a sair). As pilhas podem auxiliar no controle de operações
+recentes, seguindo o princípio LIFO (último a entrar, primeiro
+a sair). Já as tabelas hash permitem localizar alunos por
+identificadores, tornando as buscas mais rápidas. Cada estrutura
+possui vantagens diferentes, e sua escolha depende da operação
+que o sistema precisa realizar.
+                    </p>
+
+            <div class="exemplos-estruturas">
+
+                <div class="exemplo">
+                    <h3>Lista</h3>
+                    <p>Organização dos registros dos alunos, permitindo adicionar e consultar informações.</p>
+                </div>
+
+                <div class="exemplo">
+                    <h3>Fila (FIFO)</h3>
+                    <p>Organização das solicitações de matrícula por ordem de chegada.</p>
+                </div>
+
+                <div class="exemplo">
+                    <h3>Pilha (LIFO)</h3>
+                    <p>Controle de operações recentes, facilitando o acesso à última ação realizada.</p>
+                </div>
+
+                <div class="exemplo">
+                    <h3>Tabela Hash</h3>
+                    <p>Localização de alunos por meio de identificadores, agilizando as consultas.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="complexidade">
+            <h2>Complexidade Computacional</h2>
+            <p>
+                A notação Big-O permite analisar como o tempo de execução
+de um algoritmo cresce conforme aumenta a quantidade de
+dados. Por exemplo, uma busca sequencial em uma lista
+possui complexidade O(n), pois pode precisar verificar
+todos os elementos. Já uma busca em tabela hash pode
+apresentar complexidade média O(1). Os conceitos de P e NP
+ajudam a compreender os limites de eficiência na resolução
+de problemas computacionais.
+                    </p>
+
+            <div class="comparacao-busca">
+
+                <div class="busca">
+                    <h3>Busca Sequencial</h3>
+                    <span class="complexidade">O(n)</span>
+                    <p>
+                        Pode verificar os elementos um por um
+                        até encontrar o aluno desejado.
+                    </p>
+                </div>
+
+                <div class="busca">
+                    <h3>Busca em Tabela Hash</h3>
+                    <span class="complexidade">O(1) médio</span>
+                    <p>
+                        Permite localizar registros rapidamente
+                        utilizando identificadores.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section id="busca">
+    <h2>Ordenação e Busca</h2>
+    <p>
+        A ordenação permite organizar os registros dos alunos,
+        facilitando a consulta das informações. Algoritmos como
+        Bubble Sort e Insertion Sort podem ser utilizados para
+        ordenar os dados. Já a busca binária permite localizar
+        registros com mais eficiência quando os dados estão
+        previamente ordenados. A escolha do algoritmo considera
+        a quantidade de informações e o desempenho esperado.
+        </p>
+
+    <div class="exemplos-estruturas">
+
+        <div class="exemplo">
+            <h3>Bubble Sort</h3>
+            <p>
+                Pode organizar os registros dos alunos,
+                comparando elementos vizinhos e trocando
+                suas posições quando necessário.
+            </p>
+        </div>
+
+        <div class="exemplo">
+            <h3>Busca Binária</h3>
+            <p>
+                Pode localizar um aluno pelo identificador
+                em uma lista previamente ordenada,
+                reduzindo a quantidade de comparações.
+            </p>
+        </div>
+        <div class="exemplo">
+    <h3>Insertion Sort</h3>
+    <p>
+        Organiza os registros inserindo cada elemento
+        na posição correta em relação aos anteriores,
+        mantendo os dados ordenados.
+    </p>
+</div>
+
+    </div>
+</section>
+<section id="memoria">
+    <h2>Memória e Alocação</h2>
+    <p>
+        Durante a execução do sistema, os dados precisam ser
+        armazenados e acessados na memória. Em linguagens como C,
+        ponteiros permitem acessar endereços de memória, enquanto
+        funções como malloc e free possibilitam reservar e liberar
+        espaços dinamicamente. Esses conceitos ajudam a compreender
+        a importância do uso eficiente da memória e evitam desperdícios
+        durante o processamento das informações.
+    </p>
+    <div class="exemplos-estruturas">
+
+    <div class="exemplo">
+        <h3>Alocação Dinâmica</h3>
+        <p>
+            Permite reservar espaço na memória conforme
+            a necessidade do sistema, utilizando funções
+            como malloc.
+        </p>
+    </div>
+
+    <div class="exemplo">
+        <h3>Liberação de Memória</h3>
+        <p>
+            A função free libera espaços que não são
+            mais necessários, contribuindo para um
+            melhor aproveitamento da memória.
+        </p>
+    </div>
+
+</div>
+</section>
+        <section id="decisoes">
+    <h2>Decisões de Engenharia</h2>
+    <p>
+        A arquitetura do sistema considera o tipo de operação realizada
+com os dados. Para cadastrar e consultar alunos, podem ser
+utilizadas listas e tabelas hash. Para organizar as solicitações
+de matrícula, as filas permitem respeitar a ordem de chegada.
+Além disso, a análise da complexidade Big-O ajuda a comparar
+o desempenho das operações. Essas decisões buscam equilibrar
+a velocidade de consulta, a facilidade de inserção de dados
+e o uso da memória, contribuindo para um sistema mais organizado
+e eficiente.
+    </p>
+    <div class="exemplos-estruturas">
+
+    <div class="exemplo">
+        <h3>Organização dos Alunos</h3>
+        <p>
+            Listas permitem organizar os registros,
+            enquanto tabelas hash podem agilizar
+            a localização por identificadores.
+        </p>
+    </div>
+
+    <div class="exemplo">
+        <h3>Controle de Matrículas</h3>
+        <p>
+            Filas permitem processar as solicitações
+            por ordem de chegada, mantendo uma
+            sequência organizada.
+        </p>
+    </div>
+
+    <div class="exemplo">
+        <h3>Desempenho</h3>
+        <p>
+            A análise Big-O ajuda a avaliar o custo
+            das operações e comparar diferentes
+            soluções.
+        </p>
+    </div>
+
+</div>
+</section>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>
+    O desenvolvimento deste projeto demonstra como os conceitos
+    de Teoria da Computação e Estrutura de Dados contribuem
+    para a construção de sistemas organizados e eficientes.
+    Durante o planejamento do sistema da unidade Kumon,
+    esses conhecimentos ajudaram a identificar estruturas
+    adequadas para organizar os alunos, controlar as solicitações
+    de matrícula e melhorar as consultas de informações.
+    Além disso, os estudos sobre complexidade e gerenciamento
+    de memória permitem compreender como tomar decisões
+    que favoreçam o desempenho do sistema. Dessa forma,
+    a disciplina oferece uma base teórica importante para
+    as próximas etapas de desenvolvimento do projeto.
+</p>
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
